@@ -1,0 +1,403 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D3623260D0F684500981E51 /* TagesschauAppAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* TagesschauAppAppDelegate.m */; };
+		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
+		28D7ACF80DDB3853001CB0EB /* TagesschauAppViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* TagesschauAppViewController.m */; };
+		2F269CC7117A69910056867C /* ASIAuthenticationDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F269CB7117A69910056867C /* ASIAuthenticationDialog.m */; };
+		2F269CC8117A69910056867C /* ASIFormDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F269CB9117A69910056867C /* ASIFormDataRequest.m */; };
+		2F269CC9117A69910056867C /* ASIHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F269CBB117A69910056867C /* ASIHTTPRequest.m */; };
+		2F269CCA117A69910056867C /* ASIInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F269CBF117A69910056867C /* ASIInputStream.m */; };
+		2F269CCB117A69910056867C /* ASINetworkQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F269CC1117A69910056867C /* ASINetworkQueue.m */; };
+		2F269CCC117A69910056867C /* ASINSStringAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F269CC3117A69910056867C /* ASINSStringAdditions.m */; };
+		2F269CCD117A69910056867C /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F269CC6117A69910056867C /* Reachability.m */; };
+		2F269D1C117A6C070056867C /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F269D1B117A6C070056867C /* CFNetwork.framework */; };
+		2F269D1E117A6C070056867C /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F269D1D117A6C070056867C /* MobileCoreServices.framework */; };
+		2F269D20117A6C070056867C /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F269D1F117A6C070056867C /* SystemConfiguration.framework */; };
+		2F269D22117A6C070056867C /* libz.1.2.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F269D21117A6C070056867C /* libz.1.2.3.dylib */; };
+		2F269D4D117A71360056867C /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F269D4C117A71360056867C /* MediaPlayer.framework */; };
+		2F269DA3117A7D020056867C /* LoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F269DA1117A7D020056867C /* LoadingView.xib */; };
+		2F269DA4117A7D020056867C /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F269DA2117A7D020056867C /* MainWindow.xib */; };
+		2F269DAE117A7D530056867C /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F269DAD117A7D530056867C /* Default.png */; };
+		2F4DB7AC117B13F700482B03 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F4DB7AB117B13F700482B03 /* icon.png */; };
+		2FB4EE51117B2C04006932FA /* Entitlements.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2FB4EE50117B2C04006932FA /* Entitlements.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1D3623240D0F684500981E51 /* TagesschauAppAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TagesschauAppAppDelegate.h; sourceTree = "<group>"; };
+		1D3623250D0F684500981E51 /* TagesschauAppAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TagesschauAppAppDelegate.m; sourceTree = "<group>"; };
+		1D6058910D05DD3D006BFB54 /* TagesschauApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TagesschauApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		28D7ACF60DDB3853001CB0EB /* TagesschauAppViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TagesschauAppViewController.h; sourceTree = "<group>"; };
+		28D7ACF70DDB3853001CB0EB /* TagesschauAppViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TagesschauAppViewController.m; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2F269CB6117A69910056867C /* ASIAuthenticationDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIAuthenticationDialog.h; path = 3rdParty/ASIHTTPRequest/ASIAuthenticationDialog.h; sourceTree = "<group>"; };
+		2F269CB7117A69910056867C /* ASIAuthenticationDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASIAuthenticationDialog.m; path = 3rdParty/ASIHTTPRequest/ASIAuthenticationDialog.m; sourceTree = "<group>"; };
+		2F269CB8117A69910056867C /* ASIFormDataRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIFormDataRequest.h; path = 3rdParty/ASIHTTPRequest/ASIFormDataRequest.h; sourceTree = "<group>"; };
+		2F269CB9117A69910056867C /* ASIFormDataRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASIFormDataRequest.m; path = 3rdParty/ASIHTTPRequest/ASIFormDataRequest.m; sourceTree = "<group>"; };
+		2F269CBA117A69910056867C /* ASIHTTPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIHTTPRequest.h; path = 3rdParty/ASIHTTPRequest/ASIHTTPRequest.h; sourceTree = "<group>"; };
+		2F269CBB117A69910056867C /* ASIHTTPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASIHTTPRequest.m; path = 3rdParty/ASIHTTPRequest/ASIHTTPRequest.m; sourceTree = "<group>"; };
+		2F269CBC117A69910056867C /* ASIHTTPRequestConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIHTTPRequestConfig.h; path = 3rdParty/ASIHTTPRequest/ASIHTTPRequestConfig.h; sourceTree = "<group>"; };
+		2F269CBD117A69910056867C /* ASIHTTPRequestDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIHTTPRequestDelegate.h; path = 3rdParty/ASIHTTPRequest/ASIHTTPRequestDelegate.h; sourceTree = "<group>"; };
+		2F269CBE117A69910056867C /* ASIInputStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIInputStream.h; path = 3rdParty/ASIHTTPRequest/ASIInputStream.h; sourceTree = "<group>"; };
+		2F269CBF117A69910056867C /* ASIInputStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASIInputStream.m; path = 3rdParty/ASIHTTPRequest/ASIInputStream.m; sourceTree = "<group>"; };
+		2F269CC0117A69910056867C /* ASINetworkQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASINetworkQueue.h; path = 3rdParty/ASIHTTPRequest/ASINetworkQueue.h; sourceTree = "<group>"; };
+		2F269CC1117A69910056867C /* ASINetworkQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASINetworkQueue.m; path = 3rdParty/ASIHTTPRequest/ASINetworkQueue.m; sourceTree = "<group>"; };
+		2F269CC2117A69910056867C /* ASINSStringAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASINSStringAdditions.h; path = 3rdParty/ASIHTTPRequest/ASINSStringAdditions.h; sourceTree = "<group>"; };
+		2F269CC3117A69910056867C /* ASINSStringAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASINSStringAdditions.m; path = 3rdParty/ASIHTTPRequest/ASINSStringAdditions.m; sourceTree = "<group>"; };
+		2F269CC4117A69910056867C /* ASIProgressDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIProgressDelegate.h; path = 3rdParty/ASIHTTPRequest/ASIProgressDelegate.h; sourceTree = "<group>"; };
+		2F269CC5117A69910056867C /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Reachability.h; path = 3rdParty/ASIHTTPRequest/Reachability.h; sourceTree = "<group>"; };
+		2F269CC6117A69910056867C /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Reachability.m; path = 3rdParty/ASIHTTPRequest/Reachability.m; sourceTree = "<group>"; };
+		2F269D1B117A6C070056867C /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		2F269D1D117A6C070056867C /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		2F269D1F117A6C070056867C /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		2F269D21117A6C070056867C /* libz.1.2.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.3.dylib; path = usr/lib/libz.1.2.3.dylib; sourceTree = SDKROOT; };
+		2F269D4C117A71360056867C /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		2F269DA1117A7D020056867C /* LoadingView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = LoadingView.xib; path = Resources/Interfaces/LoadingView.xib; sourceTree = "<group>"; };
+		2F269DA2117A7D020056867C /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = MainWindow.xib; path = Resources/Interfaces/MainWindow.xib; sourceTree = "<group>"; };
+		2F269DAD117A7D530056867C /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = Resources/Images/Default.png; sourceTree = "<group>"; };
+		2F4DB7AB117B13F700482B03 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = Resources/Images/icon.png; sourceTree = "<group>"; };
+		2FB4EE50117B2C04006932FA /* Entitlements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Entitlements.plist; sourceTree = "<group>"; };
+		32CA4F630368D1EE00C91783 /* TagesschauApp_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TagesschauApp_Prefix.pch; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* TagesschauApp-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "TagesschauApp-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
+				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
+				288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */,
+				2F269D1C117A6C070056867C /* CFNetwork.framework in Frameworks */,
+				2F269D1E117A6C070056867C /* MobileCoreServices.framework in Frameworks */,
+				2F269D20117A6C070056867C /* SystemConfiguration.framework in Frameworks */,
+				2F269D22117A6C070056867C /* libz.1.2.3.dylib in Frameworks */,
+				2F269D4D117A71360056867C /* MediaPlayer.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				1D3623240D0F684500981E51 /* TagesschauAppAppDelegate.h */,
+				1D3623250D0F684500981E51 /* TagesschauAppAppDelegate.m */,
+				28D7ACF60DDB3853001CB0EB /* TagesschauAppViewController.h */,
+				28D7ACF70DDB3853001CB0EB /* TagesschauAppViewController.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* TagesschauApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				2F269CB1117A69760056867C /* Libraries */,
+				32CA4F630368D1EE00C91783 /* TagesschauApp_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2F269D9D117A7CBC0056867C /* Interfaces */,
+				2F269D9C117A7CB60056867C /* Images */,
+				8D1107310486CEB800E47090 /* TagesschauApp-Info.plist */,
+				2FB4EE50117B2C04006932FA /* Entitlements.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+				288765A40DF7441C002DB57D /* CoreGraphics.framework */,
+				2F269D1B117A6C070056867C /* CFNetwork.framework */,
+				2F269D1D117A6C070056867C /* MobileCoreServices.framework */,
+				2F269D1F117A6C070056867C /* SystemConfiguration.framework */,
+				2F269D21117A6C070056867C /* libz.1.2.3.dylib */,
+				2F269D4C117A71360056867C /* MediaPlayer.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2F269CB1117A69760056867C /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				2F269CB2117A697C0056867C /* ASIHTTPRequest */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		2F269CB2117A697C0056867C /* ASIHTTPRequest */ = {
+			isa = PBXGroup;
+			children = (
+				2F269CBC117A69910056867C /* ASIHTTPRequestConfig.h */,
+				2F269CBD117A69910056867C /* ASIHTTPRequestDelegate.h */,
+				2F269CC4117A69910056867C /* ASIProgressDelegate.h */,
+				2F269CB6117A69910056867C /* ASIAuthenticationDialog.h */,
+				2F269CB7117A69910056867C /* ASIAuthenticationDialog.m */,
+				2F269CB8117A69910056867C /* ASIFormDataRequest.h */,
+				2F269CB9117A69910056867C /* ASIFormDataRequest.m */,
+				2F269CBA117A69910056867C /* ASIHTTPRequest.h */,
+				2F269CBB117A69910056867C /* ASIHTTPRequest.m */,
+				2F269CBE117A69910056867C /* ASIInputStream.h */,
+				2F269CBF117A69910056867C /* ASIInputStream.m */,
+				2F269CC0117A69910056867C /* ASINetworkQueue.h */,
+				2F269CC1117A69910056867C /* ASINetworkQueue.m */,
+				2F269CC2117A69910056867C /* ASINSStringAdditions.h */,
+				2F269CC3117A69910056867C /* ASINSStringAdditions.m */,
+				2F269CC5117A69910056867C /* Reachability.h */,
+				2F269CC6117A69910056867C /* Reachability.m */,
+			);
+			name = ASIHTTPRequest;
+			sourceTree = "<group>";
+		};
+		2F269D9C117A7CB60056867C /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				2F269DAD117A7D530056867C /* Default.png */,
+				2F4DB7AB117B13F700482B03 /* icon.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		2F269D9D117A7CBC0056867C /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				2F269DA1117A7D020056867C /* LoadingView.xib */,
+				2F269DA2117A7D020056867C /* MainWindow.xib */,
+			);
+			name = Interfaces;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* TagesschauApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "TagesschauApp" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TagesschauApp;
+			productName = TagesschauApp;
+			productReference = 1D6058910D05DD3D006BFB54 /* TagesschauApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0410;
+			};
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "TagesschauApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* TagesschauApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F269DA3117A7D020056867C /* LoadingView.xib in Resources */,
+				2F269DA4117A7D020056867C /* MainWindow.xib in Resources */,
+				2F269DAE117A7D530056867C /* Default.png in Resources */,
+				2F4DB7AC117B13F700482B03 /* icon.png in Resources */,
+				2FB4EE51117B2C04006932FA /* Entitlements.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				1D3623260D0F684500981E51 /* TagesschauAppAppDelegate.m in Sources */,
+				28D7ACF80DDB3853001CB0EB /* TagesschauAppViewController.m in Sources */,
+				2F269CC7117A69910056867C /* ASIAuthenticationDialog.m in Sources */,
+				2F269CC8117A69910056867C /* ASIFormDataRequest.m in Sources */,
+				2F269CC9117A69910056867C /* ASIHTTPRequest.m in Sources */,
+				2F269CCA117A69910056867C /* ASIInputStream.m in Sources */,
+				2F269CCB117A69910056867C /* ASINetworkQueue.m in Sources */,
+				2F269CCC117A69910056867C /* ASINSStringAdditions.m in Sources */,
+				2F269CCD117A69910056867C /* Reachability.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = TagesschauApp_Prefix.pch;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				INFOPLIST_FILE = "TagesschauApp-Info.plist";
+				PRODUCT_NAME = TagesschauApp;
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = TagesschauApp_Prefix.pch;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				INFOPLIST_FILE = "TagesschauApp-Info.plist";
+				PRODUCT_NAME = TagesschauApp;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2FB4EE4B117B2B67006932FA /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_ENTITLEMENTS = Entitlements.plist;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Lars Schneider";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "AF6BCA05-15B7-471E-AFD2-CB24779E7E36";
+				SDKROOT = iphoneos;
+			};
+			name = Distribution;
+		};
+		2FB4EE4C117B2B67006932FA /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = TagesschauApp_Prefix.pch;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				INFOPLIST_FILE = "TagesschauApp-Info.plist";
+				PRODUCT_NAME = TagesschauApp;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Distribution;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Lars Schneider (2R8CV6S246)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "881458BF-99CB-4743-A8D2-6D80788DAB0C";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "TagesschauApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+				2FB4EE4C117B2B67006932FA /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "TagesschauApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+				2FB4EE4B117B2B67006932FA /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

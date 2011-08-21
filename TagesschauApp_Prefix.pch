@@ -1,0 +1,15 @@
+//
+// Prefix header for all source files of the 'TagesschauApp' target in the 'TagesschauApp' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+    #import <UIKit/UIKit.h>
+
+#ifdef DEBUG	
+	#define log(format,...) NSLog(format, ##__VA_ARGS__)
+#else
+	#define log(format,...)
+#endif
+
+#endif
