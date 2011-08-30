@@ -14,7 +14,7 @@
 {
 	MPMoviePlayerController		*_movieController;
 	UILabel						*_headerLabel;
-	IBOutlet UIView				*_loadView;
+	IBOutlet UIImageView		*_loadView;
 }
 
 - (void)setVideoDescription:(NSString*)description;
@@ -22,4 +22,3 @@
 - (void)moviePlayBackDidFinish:(NSNotification*)aNotification;
 
 @end
-

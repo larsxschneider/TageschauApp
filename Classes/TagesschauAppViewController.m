@@ -16,7 +16,7 @@
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     // Return YES for supported orientations
-    return (interfaceOrientation == UIInterfaceOrientationPortrait);
+    return (interfaceOrientation == UIDeviceOrientationLandscapeLeft);
 }
 
 
@@ -41,14 +41,26 @@
 			name:MPMoviePlayerPlaybackDidFinishNotification 
 			object:nil];
 		
+    self.view.backgroundColor = [UIColor blackColor];
+    
 	_headerLabel = [[UILabel alloc] initWithFrame:CGRectZero];
-	_headerLabel.transform = CGAffineTransformMakeRotation(M_PI/2.0);
-	_headerLabel.frame = CGRectMake(300,20,20,440);
+	_headerLabel.frame = CGRectMake(0, 0, 460, 20);
 	_headerLabel.backgroundColor = [UIColor clearColor];
 	_headerLabel.textColor = [UIColor darkGrayColor];
 	_headerLabel.font = [UIFont systemFontOfSize:13];
 	_headerLabel.textAlignment = UITextAlignmentRight;
 	_headerLabel.text = @"Bitte warten...";
+    
+    UIImage *image = [UIImage imageNamed:@"Default"];
+    _loadView = [[UIImageView alloc] initWithImage:image];
+    _loadView.transform = CGAffineTransformMakeRotation(-M_PI/2.0);
+    _loadView.frame = CGRectMake(0,0,480,320);
+    
+    UIActivityIndicatorView *actView = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
+    [actView startAnimating];
+    actView.frame = CGRectMake(199,92,actView.frame.size.width,actView.frame.size.height);
+    [_loadView addSubview:actView];
+    [actView release];
 }
 
 
@@ -65,6 +77,7 @@
 		object:nil];
 		
 	[_headerLabel release];
+    [_loadView release];
 }
 
 
@@ -78,10 +91,14 @@
 {
 	_movieController = [[MPMoviePlayerController alloc]
 		initWithContentURL:url];
-	_movieController.controlStyle = MPMovieControlStyleFullscreen;
-	//_movieController.initialPlaybackTime = 12.0f * 60.0f + 30.0f;
-	[_movieController play];
-	
+	_movieController.controlStyle = MPMovieControlStyleNone;
+    _movieController.view.frame = CGRectMake(0,0,480,320);
+    
+    [self.view addSubview:[_movieController view]];
+    [self.view addSubview:_loadView];
+
+    [_movieController play];
+    
 	[NSTimer scheduledTimerWithTimeInterval:0.1f 
 		target:self
 		selector:@selector(showOverlay:)
@@ -92,19 +109,15 @@
 
 - (void)showOverlay:(NSTimer *)timer
 {
-	UILabel *footerLabel = [[UILabel alloc] initWithFrame:CGRectZero];
-	footerLabel.transform = CGAffineTransformMakeRotation(M_PI/2.0);
-	footerLabel.frame = CGRectMake(0,20,20,440);
+	UILabel *footerLabel = [[UILabel alloc] initWithFrame:CGRectMake(0,300,460,20)];
 	footerLabel.backgroundColor = [UIColor clearColor];
 	footerLabel.textColor = [UIColor darkGrayColor];
 	footerLabel.font = [UIFont systemFontOfSize:13];
 	footerLabel.textAlignment = UITextAlignmentRight;
 	footerLabel.text = @"Quelle: www.tagesschau.de";
-	
-	[[[UIApplication sharedApplication] keyWindow] addSubview:_loadView];
-	[[[UIApplication sharedApplication] keyWindow] addSubview:_headerLabel];
-	[[[UIApplication sharedApplication] keyWindow] addSubview:footerLabel];
-	
+    
+	[self.view addSubview:_headerLabel];
+	[self.view addSubview:footerLabel];
 	[footerLabel release];
 }
 
@@ -126,10 +139,9 @@
 - (void)moviePlayBackDidFinish:(NSNotification*)aNotification
 {
 	if ([self.view.subviews containsObject:_loadView]) [_loadView removeFromSuperview];
-
-	UILabel *endLabel = [[UILabel alloc] initWithFrame:CGRectZero];
-	endLabel.transform = CGAffineTransformMakeRotation(M_PI/2.0);
-	endLabel.frame = CGRectMake(160,20,20,440);
+    if ([self.view.subviews containsObject:[_movieController view]]) [[_movieController view] removeFromSuperview];
+    
+	UILabel *endLabel = [[UILabel alloc] initWithFrame:CGRectMake(20,160,440,20)];
 	endLabel.backgroundColor = [UIColor clearColor];
 	endLabel.textColor = [UIColor darkGrayColor];
 	endLabel.font = [UIFont systemFontOfSize:14];

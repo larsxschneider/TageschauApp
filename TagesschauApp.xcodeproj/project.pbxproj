@@ -18,7 +18,6 @@
 		2F269D20117A6C070056867C /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F269D1F117A6C070056867C /* SystemConfiguration.framework */; };
 		2F269D22117A6C070056867C /* libz.1.2.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F269D21117A6C070056867C /* libz.1.2.3.dylib */; };
 		2F269D4D117A71360056867C /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F269D4C117A71360056867C /* MediaPlayer.framework */; };
-		2F269DA3117A7D020056867C /* LoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F269DA1117A7D020056867C /* LoadingView.xib */; };
 		2F269DA4117A7D020056867C /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F269DA2117A7D020056867C /* MainWindow.xib */; };
 		2F269DAE117A7D530056867C /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F269DAD117A7D530056867C /* Default.png */; };
 		2F4DB7AC117B13F700482B03 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F4DB7AB117B13F700482B03 /* icon.png */; };
@@ -49,7 +48,6 @@
 		2F269D1F117A6C070056867C /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		2F269D21117A6C070056867C /* libz.1.2.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.3.dylib; path = usr/lib/libz.1.2.3.dylib; sourceTree = SDKROOT; };
 		2F269D4C117A71360056867C /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
-		2F269DA1117A7D020056867C /* LoadingView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = LoadingView.xib; path = Resources/Interfaces/LoadingView.xib; sourceTree = "<group>"; };
 		2F269DA2117A7D020056867C /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = MainWindow.xib; path = Resources/Interfaces/MainWindow.xib; sourceTree = "<group>"; };
 		2F269DAD117A7D530056867C /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = Resources/Images/Default.png; sourceTree = "<group>"; };
 		2F4DB7AB117B13F700482B03 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = Resources/Images/icon.png; sourceTree = "<group>"; };
@@ -213,7 +211,6 @@
 		2F269D9D117A7CBC0056867C /* Interfaces */ = {
 			isa = PBXGroup;
 			children = (
-				2F269DA1117A7D020056867C /* LoadingView.xib */,
 				2F269DA2117A7D020056867C /* MainWindow.xib */,
 			);
 			name = Interfaces;
@@ -269,7 +266,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2F269DA3117A7D020056867C /* LoadingView.xib in Resources */,
 				2F269DA4117A7D020056867C /* MainWindow.xib in Resources */,
 				2F269DAE117A7D530056867C /* Default.png in Resources */,
 				2F4DB7AC117B13F700482B03 /* icon.png in Resources */,
@@ -336,12 +332,12 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CODE_SIGN_ENTITLEMENTS = Entitlements.plist;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Lars Schneider";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "AF6BCA05-15B7-471E-AFD2-CB24779E7E36";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos;
 			};
 			name = Distribution;
@@ -364,12 +360,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Lars Schneider (2R8CV6S246)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "881458BF-99CB-4743-A8D2-6D80788DAB0C";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
